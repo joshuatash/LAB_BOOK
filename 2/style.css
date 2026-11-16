@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +14,12 @@ header {
 }
 .hero-section {
     position: relative;
+    display: inline-block;
+}
+.hero-image {
+    width: 200px;
+    height: auto;
+    
 }
 .hero-overlay {
     position: absolute;
@@ -22,6 +28,7 @@ header {
     transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 a {
     color: #121212;
@@ -47,6 +54,7 @@ footer {
 img {
     width: 100%;
     height: auto;
+    
 }
 .container {
     display: flex;
