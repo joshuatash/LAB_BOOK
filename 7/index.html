@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITA-U — Uganda National IT Skills Assessment 2026</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+
+    <header>
+        <img src="uganda-coat-of-arms.png" alt="Uganda Coat of Arms" style="max-width: 80px;">
+        <h1>National Information Technology Authority — Uganda</h1>
+    </header>
+
+    <section class="banner">
+        <img src="survey-banner.jpg" alt="IT Skills Assessment Banner">
+        <div class="banner-overlay">
+            <h2>Uganda National IT Skills Assessment 2026</h2>
+        </div>
+    </section>
+
+    <div class="progress-bar">
+        <div class="step active">Step 1 — Respondent Details</div>
+        <div class="step">Step 2 — Skills Assessment</div>
+        <div class="step">Step 3 — Submit</div>
+    </div>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Respondent Details</legend>
+
+                <div class="field-group">
+                    <label for="title">Title:</label>
+                    <select id="title" name="title">
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Dr">Dr</option>
+                    </select>
+                </div>
+
+                <div class="field-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" minlength="4" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="\+256[0-9]{9}" placeholder="+256700000000" title="Format: +256 followed by 9 digits">
+                </div>
+
+                <div class="field-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+                <div class="field-group">
+                    <label>Gender:</label>
+                    <div class="radio-options">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="prefer-not" name="gender" value="Prefer not to say">
+                        <label for="prefer-not">Prefer not to say</label>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label for="region">Region:</label>
+                    <select id="region" name="region">
+                        <option value="Central">Central</option>
+                        <option value="Eastern">Eastern</option>
+                        <option value="Northern">Northern</option>
+                        <option value="Western">Western</option>
+                    </select>
+                </div>
+
+                <div class="field-group">
+                    <label>Respondent Category:</label>
+                    <div class="radio-options">
+                        <input type="radio" id="ict" name="category" value="ICT Professional">
+                        <label for="ict">ICT Professional</label>
+
+                        <input type="radio" id="gov" name="category" value="Government Officer">
+                        <label for="gov">Government Officer</label>
+
+                        <input type="radio" id="student" name="category" value="Student">
+                        <label for="student">Student</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Next Step</button>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>
