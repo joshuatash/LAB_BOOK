@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+body {
+    background-color: #FFFFF0;
+    color: #222222;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #800020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5%;
+    border-bottom: 3px solid #C9A84C;
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #FFFFF0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #C9A84C;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('hero-serena.jpg') center/cover no-repeat;
+    background-color: #800020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    color: #FFFFF0;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.btn-book {
+    display: inline-block;
+    background-color: #C9A84C;
+    color: #800020;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn-book:hover {
+    background-color: #FFFFF0;
+}
+
+/* Sections */
+.section {
+    padding: 40px 8%;
+}
+
+h2 {
+    text-align: center;
+    color: #800020;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Room Showcase (Flexbox 2 per row) */
+.room-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.room-card {
+    flex: 0 0 calc(50% - 10px);
+    background-color: #ffffff;
+    border: 1px solid #C9A84C;
+    border-top: 4px solid #800020;
+    padding: 22px;
+    border-radius: 5px;
+}
+
+.room-card h3 {
+    color: #800020;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.room-card .price {
+    color: #C9A84C;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Comparison Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #C9A84C;
+    padding: 14px;
+}
+
+thead th {
+    background-color: #800020;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+tbody td:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #800020;
+}
+
+.check {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cross {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #800020;
+    color: #FFFFF0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
