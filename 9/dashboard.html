@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISBAT University — Student Dashboard</title>
+    <link rel="stylesheet" href="portal.css">
+    <style>
+        .quick-links-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+        .quick-card {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-left: 5px solid #1A1A2E;
+            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #1A1A2E;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+        }
+        .quick-card:hover {
+            background-color: #1A1A2E;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <img src="isbat-logo.jpg" alt="ISBAT University Logo" class="logo">
+        <p class="student-name">Okuta Joshua Tash</p>
+        <nav>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="courses.html">My Courses</a>
+            <a href="fees.html">Fee Statement</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="top-header">
+            <div>
+                <h1>Welcome, Okuta Joshua Tash</h1>
+                <p class="date-text">Monday, 16 November 2026</p>
+            </div>
+            <span style="background: #EAF3DE; color: #27500A; padding: 6px 14px; border-radius: 20px; font-weight: bold;">Active</span>
+        </div>
+
+        <section class="metrics-row">
+            <div class="metric-card">
+                <h3>Current GPA</h3>
+                <p class="metric-value">4.25</p>
+            </div>
+            <div class="metric-card">
+                <h3>Credit Hours</h3>
+                <p class="metric-value">24</p>
+            </div>
+            <div class="metric-card">
+                <h3>Outstanding Fee Balance</h3>
+                <p class="metric-value">UGX 350,000</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Quick Links</h2>
+            <div class="quick-links-grid">
+                <a href="dashboard.html" class="quick-card">Dashboard</a>
+                <a href="courses.html" class="quick-card">My Courses</a>
+                <a href="fees.html" class="quick-card">Fee Statement</a>
+                <a href="#profile" class="quick-card">Update Profile</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
