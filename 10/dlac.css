@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #222222;
+}
+
+/* Header & Navbar */
+header {
+    background-color: #002D62;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    border-bottom: 4px solid #C9A63A;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C9A63A;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    background-color: #002D62;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.55;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+
+.hero-overlay h2 {
+    color: #ffffff;
+    font-size: 34px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Main Content */
+main {
+    padding: 40px 8%;
+}
+
+/* 3 Loan Cards (Flexbox) */
+.loan-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.card {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-top: 5px solid #002D62;
+    border-radius: 6px;
+    padding: 25px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #002D62;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card .rate {
+    font-size: 20px;
+    font-weight: bold;
+    color: #C9A63A;
+    margin-bottom: 18px;
+}
+
+.btn-apply {
+    display: inline-block;
+    background-color: #002D62;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-apply:hover {
+    background-color: #C9A63A;
+    color: #002D62;
+}
+
+/* Comparison Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+}
+
+.table-banner {
+    background-color: #002D62;
+    color: #C9A63A;
+    font-size: 18px;
+}
+
+thead tr:nth-child(2) th {
+    background-color: #004080;
+    color: #ffffff;
+}
+
+tbody td:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #002D62;
+}
+
+/* Application Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #dddddd;
+}
+
+fieldset {
+    border: 1px solid #002D62;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: #002D62;
+    padding: 0 8px;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #002D62;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #002D62;
+    color: #C9A63A;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #001d40;
+}

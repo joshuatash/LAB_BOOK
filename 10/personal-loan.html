@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanbic Bank Uganda — Personal Loan Application</title>
+    <link rel="stylesheet" href="dlac.css">
+</head>
+<body>
+
+    <header>
+        <h1>Stanbic Bank Uganda</h1>
+        <nav>
+            <a href="index.html">Loan Products</a>
+            <a href="personal-loan.html">Personal Loan Application</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Loan Application</legend>
+
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <select id="title" name="title">
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Dr">Dr</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="district">District:</label>
+                    <select id="district" name="district">
+                        <option value="Kampala">Kampala</option>
+                        <option value="Wakiso">Wakiso</option>
+                        <option value="Mukono">Mukono</option>
+                        <option value="Mbarara">Mbarara</option>
+                        <option value="Gulu">Gulu</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="salary">Monthly Salary (UGX):</label>
+                    <input type="number" id="salary" name="salary" min="300000" required>
+                </div>
+
+                <p style="background: #EAF3DE; color: #27500A; padding: 8px; margin-bottom: 15px; border-radius: 4px;">
+                    You appear eligible for this loan.
+                </p>
+
+                <div class="form-group">
+                    <label for="amount">Loan Amount Requested (UGX):</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="period">Repayment Period:</label>
+                    <select id="period" name="period">
+                        <option value="12">12 months</option>
+                        <option value="24">24 months</option>
+                        <option value="36">36 months</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="purpose">Loan Purpose:</label>
+                    <select id="purpose" name="purpose">
+                        <option value="School Fees">School Fees</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Home Improvement">Home Improvement</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="declaration" name="declaration" required>
+                    <label for="declaration">I confirm that the information provided is accurate.</label>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Application</button>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>
