@@ -1,0 +1,64 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Mulago National Referral Hospital - Outpatient Appointment Form</title>
+</head>
+<body>
+    <h2>Mulago National Referral Hospital</h2>
+    <h3>Outpatient Clinic Appointment Request Form</h3>
+    <form action="process_appointment.php" method="POST">
+        <p>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" size="30" maxlength="80" required placeholder="Enter full name">
+        </p>
+        <p>
+            <label for="phone">Phone Number (UG):</label><br>
+            <input type="tel" id="phone" name="phone" size="20" maxlength="13" required 
+                   placeholder="+2567XXXXXXXX" pattern="^\+256[0-9]{9}$">
+        </p>
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" size="30" maxlength="100" required placeholder="example@domain.com">
+        </p>
+        <p>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required max="2026-11-11">
+        </p>
+        <p>
+            <b>Patient Type:</b><br>
+            <input type="radio" id="new_patient" name="patient_type" value="New" checked>
+            <label for="new_patient">New</label>
+            
+            <input type="radio" id="returning_patient" name="patient_type" value="Returning">
+            <label for="returning_patient">Returning</label>
+        </p>
+        <p>
+            <label for="clinic">Preferred Outpatient Clinic:</label><br>
+            <select id="clinic" name="clinic" required>
+                <option value="">-- Select Clinic --</option>
+                <option value="general">General Outpatient Clinic</option>
+                <option value="dental">Dental Clinic</option>
+                <option value="eye">Eye Clinic (Ophthalmology)</option>
+                <option value="pediatric">Paediatric Clinic</option>
+                <option value="mch">Maternal & Child Health Clinic</option>
+            </select>
+        </p>
+        <p>
+            <label for="pref_date">Preferred Appointment Date:</label><br>
+            <input type="date" id="pref_date" name="pref_date" required min="2026-11-12">
+        </p>
+        <p>
+            <label for="pref_time">Preferred Appointment Time:</label><br>
+            <input type="time" id="pref_time" name="pref_time" required>
+        </p>
+        <p>
+            <label for="symptoms">Symptoms / Reason for Visit:</label><br>
+            <textarea id="symptoms" name="symptoms" rows="4" cols="40" maxlength="500" placeholder="Describe your symptoms here..."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit Appointment Request">
+            <input type="reset" value="Clear Form">
+        </p>
+    </form>
+</body>
+</html>
